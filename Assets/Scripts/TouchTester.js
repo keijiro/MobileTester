@@ -2,6 +2,14 @@
 
 var texture : Texture2D;
 
+function Update() {
+    if (Input.touches.Length > 0) {
+        transform.localScale = Vector3.one * 2.0;
+    } else {
+        transform.localScale = Vector3.one;
+    }
+}
+
 function OnGUI() {
     var size = Screen.width / 2;
     for (var touch in Input.touches) {
