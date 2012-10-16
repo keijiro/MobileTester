@@ -10,11 +10,12 @@ function OnGUI() {
     GUILayout.Label(
         "OS: " + SystemInfo.operatingSystem +
         "\nCPU: " + SystemInfo.processorType + " x " + SystemInfo.processorCount +
-        "\nSysMem: " + SystemInfo.systemMemorySize + " VRAM: " + SystemInfo.graphicsMemorySize +
-        "\nGPU: " + SystemInfo.graphicsDeviceName + " " + SystemInfo.graphicsDeviceVendor +
-        "\nShaderLv: " + SystemInfo.graphicsShaderLevel + " Fill: " + SystemInfo.graphicsPixelFillrate +
+        "\nMemory: " + SystemInfo.systemMemorySize + " VRAM: " + SystemInfo.graphicsMemorySize +
+        "\nGPU: " + SystemInfo.graphicsDeviceName + " (ID:" + SystemInfo.graphicsDeviceID + ")" +
+        "\nVendor: " + SystemInfo.graphicsDeviceVendor + " (ID:" + SystemInfo.graphicsDeviceVendorID + ")" +
+        "\nAPI: " + SystemInfo.graphicsDeviceVersion + " Shader: " + SystemInfo.graphicsShaderLevel + " Fillrate: " + SystemInfo.graphicsPixelFillrate +
         "\nUDID: " + SystemInfo.deviceUniqueIdentifier +
-        "\nDevice: " + SystemInfo.deviceName + " " + SystemInfo.deviceModel
+        "\nDevice Name: " + SystemInfo.deviceName + " Model:" + SystemInfo.deviceModel
     );
     GUILayout.EndArea();
 }
