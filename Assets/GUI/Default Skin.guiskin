@@ -10,7 +10,8 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12001, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Default Skin
-  m_Font: {fileID: 12800000, guid: 0504c7d2a61f64979a7c59aa1bcf7074, type: 3}
+  m_EditorClassIdentifier: 
+  m_Font: {fileID: 0}
   m_box:
     m_Name: box
     m_Normal:
@@ -235,7 +236,7 @@ MonoBehaviour:
       m_Top: 0
       m_Bottom: 0
     m_Font: {fileID: 0}
-    m_FontSize: 0
+    m_FontSize: 20
     m_FontStyle: 0
     m_Alignment: 0
     m_WordWrap: 1

@@ -5,13 +5,13 @@ PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   AndroidProfiler: 0
-  defaultScreenOrientation: 3
+  defaultScreenOrientation: 0
   targetDevice: 2
   targetGlesGraphics: 1
   targetResolution: 0
   accelerometerFrequency: 60
   companyName: Radium Software
-  productName: Unity Tester
+  productName: Unity Mobile Tester
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 1024
@@ -30,8 +30,8 @@ PlayerSettings:
   allowedAutorotateToLandscapeRight: 1
   allowedAutorotateToLandscapeLeft: 1
   useOSAutorotation: 1
-  use32BitDisplayBuffer: 0
-  use24BitDepthBuffer: 0
+  use32BitDisplayBuffer: 1
+  use24BitDepthBuffer: 1
   defaultIsFullScreen: 0
   defaultIsNativeResolution: 1
   runInBackground: 0
@@ -69,7 +69,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  iPhoneBundleIdentifier: jp.radiumsoftware.unitytester
+  iPhoneBundleIdentifier: jp.radiumsoftware.unitymobiletester
   productGUID: ade1bc0148c6042ba833a1582d7ee0ac
   iPhoneBundleVersion: 1.0
   AndroidBundleVersionCode: 1
@@ -78,14 +78,14 @@ PlayerSettings:
   aotOptions: 
   apiCompatibilityLevel: 2
   iPhoneStrippingLevel: 3
-  iPhoneScriptCallOptimization: 0
+  iPhoneScriptCallOptimization: 1
   ForceInternetPermission: 0
   ForceSDCardPermission: 0
   CreateWallpaper: 0
   APKExpansionFiles: 0
-  StripUnusedMeshComponents: 0
+  StripUnusedMeshComponents: 1
   iPhoneSdkVersion: 988
-  iPhoneTargetOSVersion: 10
+  iPhoneTargetOSVersion: 16
   uIPrerenderedIcon: 0
   uIRequiresPersistentWiFi: 0
   uIStatusBarHidden: 1
