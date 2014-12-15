@@ -1,24 +1,23 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class SystemInfoView : MonoBehaviour
 {
-    public GUISkin skin;
+    public GUIStyle labelStyle;
 
-    void OnGUI ()
+    void OnGUI()
     {
-        GUI.skin = skin;
-        GUILayout.BeginArea (new Rect (0, 0, Screen.width, Screen.height));
-        GUILayout.FlexibleSpace ();
-        GUILayout.Label (
-            "OS: " + SystemInfo.operatingSystem +
-            "\nCPU: " + SystemInfo.processorType + " x " + SystemInfo.processorCount +
-            "\nMemory: " + SystemInfo.systemMemorySize + " VRAM: " + SystemInfo.graphicsMemorySize +
-            "\nGPU: " + SystemInfo.graphicsDeviceName + " (ID:" + SystemInfo.graphicsDeviceID + ")" + " Vendor: " + SystemInfo.graphicsDeviceVendor + " (ID:" + SystemInfo.graphicsDeviceVendorID + ")" +
-            "\nDriver: " + SystemInfo.graphicsDeviceVersion + " SM: " + SystemInfo.graphicsShaderLevel + " Fillrate: " + SystemInfo.graphicsPixelFillrate +
-            "\nUDID: " + SystemInfo.deviceUniqueIdentifier +
-            "\nDevice Name: " + SystemInfo.deviceName + " Model:" + SystemInfo.deviceModel + " Type:" + SystemInfo.deviceType
-        );
-        GUILayout.EndArea ();
+        var text = "";
+        text += "Device Name: " + SystemInfo.deviceName + "\n";
+        text += "Device Type: " + SystemInfo.deviceType + "\n";
+        text += "Model Name: " + SystemInfo.deviceModel + "\n";
+        text += "OS: " + SystemInfo.operatingSystem + "\n";
+        text += "CPU: " + SystemInfo.processorType + " x " + SystemInfo.processorCount + "\n";
+        text += "Memory: " + SystemInfo.systemMemorySize.ToString("#,0") + "kB (VRAM:" + SystemInfo.graphicsMemorySize.ToString("#,0") + "kB)\n";
+        text += "GPU: " + SystemInfo.graphicsDeviceName + " (ID:" + SystemInfo.graphicsDeviceID + ")\n";
+        text += "Vendor: " + SystemInfo.graphicsDeviceVendor + " (ID:" + SystemInfo.graphicsDeviceVendorID + ")\n";
+        text += "Driver: " + SystemInfo.graphicsDeviceVersion + " (SM:" + SystemInfo.graphicsShaderLevel + ")\n";
+        text += "Resolution: " + Screen.width + " x " + Screen.height + "\n";
+        text += "UDID: " + SystemInfo.deviceUniqueIdentifier;
+        GUI.Label(new Rect(0, 0, Screen.width, Screen.height), text, labelStyle);
     }
 }

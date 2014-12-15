@@ -7,11 +7,11 @@ PlayerSettings:
   AndroidProfiler: 0
   defaultScreenOrientation: 0
   targetDevice: 2
-  targetGlesGraphics: 1
+  targetGlesGraphics: -1
   targetResolution: 0
-  accelerometerFrequency: 60
+  accelerometerFrequency: 100
   companyName: Radium Software
-  productName: Unity Mobile Tester
+  productName: Tester
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 1024
@@ -22,7 +22,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   m_ActiveColorSpace: 0
   m_MTRendering: 1
-  m_MobileMTRendering: 0
+  m_MobileMTRendering: 1
   m_UseDX11: 0
   m_Stereoscopic3D: 0
   iosShowActivityIndicatorOnLoading: -1
@@ -41,7 +41,7 @@ PlayerSettings:
   captureSingleScreen: 0
   Override IPod Music: 0
   Prepare IOS For Recording: 0
-  enableHWStatistics: 1
+  enableHWStatistics: 0
   usePlayerLog: 1
   stripPhysics: 0
   forceSingleInstance: 0
@@ -91,25 +91,34 @@ PlayerSettings:
   uIStatusBarHidden: 1
   uIExitOnSuspend: 0
   uIStatusBarStyle: 0
-  iPhoneSplashScreen: {fileID: 0}
-  iPhoneHighResSplashScreen: {fileID: 0}
-  iPhoneTallHighResSplashScreen: {fileID: 0}
-  iPhone47inSplashScreen: {fileID: 0}
-  iPhone55inPortraitSplashScreen: {fileID: 0}
-  iPhone55inLandscapeSplashScreen: {fileID: 0}
-  iPadPortraitSplashScreen: {fileID: 0}
-  iPadHighResPortraitSplashScreen: {fileID: 0}
-  iPadLandscapeSplashScreen: {fileID: 0}
-  iPadHighResLandscapeSplashScreen: {fileID: 0}
+  iPhoneSplashScreen: {fileID: 2800000, guid: 69c464c897f414d3fb8ae4488bc2df44, type: 3}
+  iPhoneHighResSplashScreen: {fileID: 2800000, guid: 69c464c897f414d3fb8ae4488bc2df44,
+    type: 3}
+  iPhoneTallHighResSplashScreen: {fileID: 2800000, guid: 69c464c897f414d3fb8ae4488bc2df44,
+    type: 3}
+  iPhone47inSplashScreen: {fileID: 2800000, guid: 69c464c897f414d3fb8ae4488bc2df44,
+    type: 3}
+  iPhone55inPortraitSplashScreen: {fileID: 2800000, guid: 69c464c897f414d3fb8ae4488bc2df44,
+    type: 3}
+  iPhone55inLandscapeSplashScreen: {fileID: 2800000, guid: 69c464c897f414d3fb8ae4488bc2df44,
+    type: 3}
+  iPadPortraitSplashScreen: {fileID: 2800000, guid: 69c464c897f414d3fb8ae4488bc2df44,
+    type: 3}
+  iPadHighResPortraitSplashScreen: {fileID: 2800000, guid: 69c464c897f414d3fb8ae4488bc2df44,
+    type: 3}
+  iPadLandscapeSplashScreen: {fileID: 2800000, guid: 69c464c897f414d3fb8ae4488bc2df44,
+    type: 3}
+  iPadHighResLandscapeSplashScreen: {fileID: 2800000, guid: 69c464c897f414d3fb8ae4488bc2df44,
+    type: 3}
   AndroidTargetDevice: 0
-  AndroidSplashScreenScale: 0
+  AndroidSplashScreenScale: 2
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
   resolutionDialogBanner: {fileID: 0}
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 007d48b284b284e7ea57acec12548b55, type: 3}
       m_Size: 128
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default
