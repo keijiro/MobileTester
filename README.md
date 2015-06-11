@@ -1,12 +1,14 @@
-# unity-mobile-tester
+MobileTester
+============
 
-A simple test app for mobile devices (made with Unity).
+A simple test app for mobile devices.
 
-![screen shot](http://keijiro.github.io/unity-mobile-tester/screenshot.png)
+![screenshot](http://keijiro.github.io/unity-mobile-tester/screenshot.png)
 
-## Features
+Features
+--------
 
 - System information display.
 - Touch point indicator (multi-touch capable).
 - Gyroscope attitude indicator.
-- Plays a sound on touches (for audio latency test).
+- Plays sound on touches (for audio latency test).
