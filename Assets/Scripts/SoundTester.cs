@@ -7,7 +7,7 @@ public class SoundTester : MonoBehaviour
     {
         foreach (var touch in Input.touches) {
             if (touch.phase == TouchPhase.Began) {
-                audio.Play();
+                GetComponent<AudioSource>().Play();
                 break;
             }
         }
